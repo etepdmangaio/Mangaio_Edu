@@ -24,7 +24,7 @@ python -m venv venv
 ## Instalando a biblioteca do streamlit
 
 ```
-pip install streamlit
+pip install streamlit streamlit_sortables
 
 ```
 
