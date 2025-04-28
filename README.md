@@ -55,3 +55,17 @@ git commit -m "Commit x.x"
 git push -u origin main
 
 ```
+
+## André
+
+## Criando uma branch
+
+```
+git branch
+git checkout -b andre
+git add .
+git status
+git commit -m "cmmit 1.2"
+git push origin andre
+
+```
