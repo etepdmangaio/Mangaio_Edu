@@ -2,6 +2,7 @@ import streamlit as st
 from sidebar_components.matematica import sidebar_matematica
 from sidebar_components.geografia import sidebar_geografia
 from sidebar_components.historia import sidebar_historia2
+from sidebar_components.historia import sidebar_historia3
 from sidebar_components.historia import sidebar_historia_deflagracao_revolta_1824
 from sidebar_components.historia import sidebar_historia_repressao_imperial
 from sidebar_components.historia import sidebar_historia_consequencias

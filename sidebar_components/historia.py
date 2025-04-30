@@ -169,9 +169,8 @@ def sidebar_historia2():
                 st.error("❌ Resposta incorreta.")
 
 def sidebar_historia3():
-
-    abas = st.tabs(["📖 Introdução","👤 Personagens", "🧠 Quiz"])
-
+    abas = st.tabs(["📖 Introdução", "👤 Personagens", "🧠 Quiz"])
+    
     with abas[0]:
         st.header("Introdução")
         st.write("""
@@ -196,10 +195,7 @@ def sidebar_historia3():
             get_color=[255, 0, 0, 200],
             get_radius=20000,
             pickable=True
-    
         )
-        
-        
         
         view_state = pdk.ViewState(
             longitude=-38.0,
@@ -220,15 +216,15 @@ def sidebar_historia3():
         st.title("Frei Caneca")
         col1, col2 = st.columns([1, 3])
         with col1:
-         st.image('https://averdade.org.br/wp-content/uploads/2025/02/P12-_-Frei-Caneca-_-Roberto-Ploeg-1068x1378.jpg', width=150)
+            st.image('https://averdade.org.br/wp-content/uploads/2025/02/P12-_-Frei-Caneca-_-Roberto-Ploeg-1068x1378.jpg', width=150)
         with col2:
-         st.subheader('Joaquim da Silva Rabelo')
-         st.markdown("""
-    **Idade:** 45 anos  
-    **Carreira:**  Escritor, clérico católico e político.   
-    **Influência:** líder e mártir da Confederação do Equador.      
-    **Funções:**  Como jornalista, esteve à frente do Typhis Pernambucano.                 
-    """)
+            st.subheader('Joaquim da Silva Rabelo')
+            st.markdown("""
+                **Idade:** 45 anos  
+                **Carreira:** Escritor, clérico católico e político.   
+                **Influência:** líder e mártir da Confederação do Equador.      
+                **Funções:** Como jornalista, esteve à frente do Typhis Pernambucano.                 
+            """)
 
 def sidebar_historia_deflagracao_revolta_1824():
     # with st.sidebar.expander("História", expanded=False):
