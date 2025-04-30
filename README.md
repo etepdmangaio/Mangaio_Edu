@@ -65,7 +65,7 @@ git branch
 git checkout -b andre
 git add .
 git status
-git commit -m "cmmit 1.2"
+git commit -m "cmmit 1.x"
 git push origin andre
 
 ```

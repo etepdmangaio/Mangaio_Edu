@@ -11,19 +11,19 @@ st.set_page_config(page_title="MangaioEdu", layout="wide")
 
 st.sidebar.title("📚 Mangaio - Uma Plataforma Educacional Colaborativa")
 
-with st.sidebar.expander("📖 História", expanded=False):
+with st.sidebar.expander("📖 História", expanded=True):
     # st.markdown("### Subtemas")
     subtema_escolhido = st.radio("Escolha uma trilha: ", [
-        "Crise do Primeiro Reinado", "Insatisfação do Nordeste", "Influências Liberais e Republicanas",
+        "Crise do Primeiro Reinado",
         "Deflagração da Revolta (1824)", "Repressão Imperial", "Consequências"], key="subtema")
-st.write("Subtema selecionado:", subtema_escolhido)
+    # "Insatisfação do Nordeste", "Influências Liberais e Republicanas"
+# st.write("Subtema selecionado:", subtema_escolhido)
 
 sidebar_geografia()
 
 sidebar_matematica()
 
 sidebar_logica_programacao()
-
 
 if subtema_escolhido == "Crise do Primeiro Reinado":
     _crise_primeiro_reinado()
