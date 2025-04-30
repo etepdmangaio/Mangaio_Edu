@@ -22,6 +22,9 @@ st.write("Subtema selecionado:", subtema_escolhido)
 if subtema_escolhido == "Crise do Primeiro Reinado":
     sidebar_historia2()
 
+if subtema_escolhido == "Insatisfação do Nordeste":
+    sidebar_historia3()
+
 if subtema_escolhido == "Deflagração da Revolta (1824)":
     sidebar_historia_deflagracao_revolta_1824()
 
