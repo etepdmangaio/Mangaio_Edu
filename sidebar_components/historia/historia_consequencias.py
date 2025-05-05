@@ -323,26 +323,26 @@ def _historia_consequencias():
             #         else:
             #             st.error(f"❌ Opa! Resposta errada: **{resposta}**\n\n💡 Resposta certa: **{p['correta']}**")
             acertos = 0
-        erros = 0
+            erros = 0
 
-        for i, p in enumerate(perguntas):
-            st.subheader(f"{i+1}. {p['pergunta']}")
-            resposta = st.radio(
-                "Escolha uma alternativa:",
-                options=p["alternativas"],
-                key=f"resposta_deflagracao_revolta{i}"
-            )
-
-        # Verificação e contagem (fora do loop de exibição das perguntas)
-        if st.button("Ver resultado"):
             for i, p in enumerate(perguntas):
-                resposta = st.session_state.get(f"resposta_deflagracao_revolta{i}")
-                if resposta == p["correta"]:
-                    acertos += 1
-                else:
-                    erros += 1
+                st.subheader(f"{i+1}. {p['pergunta']}")
+                resposta = st.radio(
+                    "Escolha uma alternativa:",
+                    options=p["alternativas"],
+                    key=f"resposta_deflagracao_revolta{i}"
+                )
 
-            st.markdown("---")
-            st.success(f"✅ Total de acertos: **{acertos}**")
-            st.error(f"❌ Total de erros: **{erros}**")
+            # Verificação e contagem (fora do loop de exibição das perguntas)
+            if st.button("Ver resultado"):
+                for i, p in enumerate(perguntas):
+                    resposta = st.session_state.get(f"resposta_deflagracao_revolta{i}")
+                    if resposta == p["correta"]:
+                        acertos += 1
+                    else:
+                        erros += 1
+
+                st.markdown("---")
+                st.success(f"✅ Total de acertos: **{acertos}**")
+                st.error(f"❌ Total de erros: **{erros}**")
 
