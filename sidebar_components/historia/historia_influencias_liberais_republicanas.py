@@ -83,11 +83,32 @@ def _historia_influe_liber_republ():
         td.found {
             background-color: lightgreen;
         }    
-        mark{
-            background-color: rgb(41, 222, 216);
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #3e8e41;
+            transform: scale(0.98);
         }
         h5{
-            background-color: limegreen;
+            color: #EDEDED;
+        }
+        mark{
+            color: #EDEDED;
+            background-color: transparent !important;
         }     
         </style>
 

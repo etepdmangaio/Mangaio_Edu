@@ -95,17 +95,16 @@ def _historia_deflagracao_revolta_1824():
 
     with abas[3]:
         st.header("Caça-palavras")
-        st.write("🎯 Encontre as palavras relacionadas à Revolta de 1824!")
-        st.write("REVOLTA, PERNAMBUCO, CONFEDERACAO, FREICANECA, DOMPEDRO, SEPARACAO")
+        st.write("🎮 Aqui é onde o jogo vai!")
         html_code = """
         <style>
         table {
             border-collapse: collapse;
             margin-bottom: 10px;
-            
+            background-color: white;
         }
         td {
-            border: 1px solid white;
+            border: 3px solid rgb(41, 222, 216);
             padding: 10px;
             text-align: center;
             font-weight: bold;
@@ -119,12 +118,12 @@ def _historia_deflagracao_revolta_1824():
             background-color: lightgreen;
         }
         p {
-            color: white;
+            color: #EDEDED;
         }
         button {
             padding: 10px 20px;
             border-radius: 10px;
-            background-color: #4CAF50; /* verde suave */
+            background-color: #4CAF50; 
             color: white;
             border: none;
             font-weight: bold;
